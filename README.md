@@ -15,21 +15,17 @@ $ sudo docker run <IMAGE-ID>
 # check running docker containers and grab container ID for kafka-docker:v1.0
 $ sudo docker ps
 
-# to enter inside container
+# to enter inside container (not necessary)
 $ sudo docker exec -it <CID> /bin/bash
 ````
-
 OR
-
 ````
 # build, create, start, and attach to container in single command
-$ sudo docker-compose up --build
+$ sudo docker-compose up -d
+
+# check if container is running
+$ sudo docker ps
 ````
 
 ## Kafka server is started at `localhost:9092`
 
-## To prune all unused/stale docker images
-
-````
-$ sudo docker system prune
-````
