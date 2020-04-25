@@ -6,16 +6,16 @@
 # build docker image without using cached one
 $ sudo docker-compose build --no-cache 
 
-# check builded docker image and grab image ID
+# check docker images and grab image ID of kafka-docker:v1.0
 $ sudo docker images
 
-# run the image with docker-kafka name
+# run the image
 $ sudo docker run <IMAGE-ID>
 
-# check running docker containers and grab container ID
+# check running docker containers and grab container ID for kafka-docker:v1.0
 $ sudo docker ps
 
-# run a command in running container, to enter inside container
+# to enter inside container
 $ sudo docker exec -it <CID> /bin/bash
 ````
 
