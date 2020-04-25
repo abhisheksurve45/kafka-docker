@@ -1,0 +1,10 @@
+version: "3"
+services:
+  kafka-docker:
+    network_mode: host
+    build:
+      context: ..
+      dockerfile: kafka-docker/Dockerfile
+    image: kafka-docker:v1.0
+    ports:
+      - "9092"
