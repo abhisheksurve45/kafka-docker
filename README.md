@@ -9,7 +9,7 @@ $ sudo docker-compose build --no-cache
 # check builded docker image and grab image ID
 $ sudo docker images
 
-# run the image with docker-kafka name
+# run the image
 $ sudo docker run <IMAGE-ID>
 
 # check running docker containers and grab container ID
@@ -27,9 +27,3 @@ $ sudo docker-compose up --build
 ````
 
 ## Kafka server is started at `localhost:9092`
-
-## To prune all unused/stale docker images
-
-````
-$ sudo docker system prune
-````
