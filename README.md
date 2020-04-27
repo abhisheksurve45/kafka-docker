@@ -1,4 +1,4 @@
-# Generic docker image for running `kafka` locally
+ # Generic docker image for running `kafka` locally
 
 ## Execute docker image 
 
